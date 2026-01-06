@@ -8,7 +8,7 @@
   [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](./LICENSE)
   [![Status](https://img.shields.io/badge/status-In%20Development-yellow.svg)]()
   [![Blockchain](https://img.shields.io/badge/blockchain-Solana-blue.svg)](https://solana.com)
-  [![Origin](https://img.shields.io/badge/origin-Québec%2C%20Canada-blue.svg)]()
+  [![Origin](https://img.shields.io/badge/origin-Montréal%2C%20Québec-blue.svg)]()
 </div>
 
 ---
