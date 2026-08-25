@@ -4,33 +4,84 @@
 
 ### What is World Industries Network?
 
-WIN is a **social platform** for entrepreneurs, manufacturers, and talents to connect, collaborate, and thrive globally.
+WIN is a **B2B platform** for entrepreneurs, manufacturers and talent to connect, trade, and run their operations globally. A social feed, a marketplace, real-time chat, and a full company back office behind one login.
+
+---
+
+### Is WIN live?
+
+**Yes, in beta.** Real accounts, real listings, real payments, real payouts. Features ship continuously. Everything in [FEATURES.md](FEATURES.md) works today unless it is marked *coming soon*.
 
 ---
 
 ### Is WIN available worldwide?
 
-**Yes!** WIN is a global platform. While based in Québec, Canada, we serve users from all countries. Future phases will add multi-language support and regional partnerships.
+**Yes.** WIN is a global platform, based in Québec, Canada. The **entire interface** is available in **22 languages**, right-to-left layouts included.
 
 ---
 
-### Do I need cryptocurrency to use WIN?
+### What does it cost to use WIN?
 
-**No.** You can:
-- Sign up and use core features for free (no crypto needed)
-- Pay with credit cards, Interac, wire transfers for premium features
-- Optionally acquire $WIN tokens for lower fees and governance
+Nothing to join. The **Free** tier keeps the whole network, forever: feed, chat, connections, profile, browsing the marketplace.
 
-Crypto is an option, not a requirement.
+Paid tiers add capacity rather than unlocking the basics:
+
+**Business:** Reach $29, Commerce $79, Growth $149, Scale $299, Business $599, Corporate $1,499 per month.
+
+**Personal:** Pro $12, Freelance $29 per month.
 
 ---
 
-### How do I get $WIN tokens?
+### Can I run more than one company?
 
-1. **Presale** (current/upcoming) - Discounted early access
-2. **DEX/CEX** (post-launch) - Buy on exchanges like Raydium, Binance
-3. **Earn** - Platform rewards for activity (referrals, content, high ESG scores)
-4. **Receive** - Payment for services on Growth Exchange
+**Yes.** One user can hold **up to 10 workspaces**. Each keeps its own posts, products, team, orders, inbox, calendar and payout setup, and each is verified separately. Switching takes one click from the header avatar.
+
+---
+
+## Selling & Fees
+
+### What does it cost to sell on WIN?
+
+Two separate things, and it is worth keeping them separate:
+
+1. **Transaction fee, 3.2% + $0.30 per seller order.**, on the subtotal and shipping, taxes excluded. That is the only amount WIN takes from your sales.
+2. **An active paid membership.** Selling requires one. It is billed separately from the transaction fee.
+
+Your listings stay visible without a membership. What closes is checkout.
+
+---
+
+### Can a buyer order from several sellers at once?
+
+**Yes.** A cart can hold items from several sellers. The buyer pays once; behind the scenes the order splits per seller, and each seller ships and is paid separately.
+
+---
+
+### How do I get paid?
+
+Through **Stripe Connect**. Each of your workspaces gets its own connected account and its own payouts. Your Finance page shows revenue, payouts, invoices and exactly what the platform charged, per order.
+
+---
+
+### Can I bring my existing catalogue?
+
+**Yes**, by CSV import, rather than retyping every listing.
+
+---
+
+### What is Supply & Demand?
+
+A B2B board inside OASIS. Post what you are **offering** or what you are **looking for**, and let the other side come to you. Built for volume deals rather than one-off retail.
+
+---
+
+## Verification
+
+### What do the badges mean?
+
+Five kinds: **personal**, **sole proprietorship**, **incorporated**, **nonprofit**, and **verified website**.
+
+A badge belongs to the **name it follows**. An employee posting on behalf of a storefront shows their own badge, not the company's. They are separate on purpose, because only the company one decides whether the shop can take money.
 
 ---
 
@@ -40,156 +91,96 @@ Crypto is an option, not a requirement.
 
 **Yes.** WIN implements enterprise-grade security:
 - **Encryption:** AES-256 at rest, TLS 1.3 in transit
-- **Two-Factor Authentication (2FA):** Protects your account
-- **Passwords:** bcrypt hashing (never stored in plain text)
-- **Regular Audits:** Third-party security assessments (planned)
-- **Privacy Controls:** You decide what's visible to others
-
-**Blockchain transparency:**
-- Only $WIN token transactions are public (on Solana blockchain)
-- Your personal data (email, profile) is private and encrypted
+- **Two-factor authentication (2FA):** TOTP, with backup codes
+- **Sessions:** every signed-in device is listed and can be revoked individually
+- **Passwords:** argon2id hashing, never stored in plain text
+- **Privacy controls:** you decide what is visible, per identity
 
 ---
 
 ### Can I delete my account?
 
 **Yes.** WIN supports:
-- **Data export** - Download all your data anytime
-- **Account deletion** - Permanently remove your account
-- **Right to be forgotten** - GDPR-ready (planned compliance)
-
-Note: Blockchain transactions ($WIN tokens) are immutable and cannot be deleted.
+- **Data export.** Download everything your account holds, in one file
+- **Account deletion.** Permanently remove your account, with a confirmation step
+- **Right to be forgotten.** Full GDPR alignment planned
 
 ---
 
 ### What data does WIN collect?
 
 **We collect:**
-- **Account info:** Email, name, profile details (you provide)
-- **Activity:** Connections, messages, transactions (for functionality)
-- **Analytics:** Usage patterns to improve platform (anonymized)
-- **ESG data:** Business practices for scoring (you choose what to share)
+- **Account info:** email, name, profile details (you provide)
+- **Activity:** connections, messages, transactions (for functionality)
+- **Analytics:** usage patterns to improve the platform (anonymized)
+- **ESG data:** business practices for scoring (you choose what to share)
 
 **We do NOT:**
 - Sell your data to third parties
 - Track you across the web
 - Share personal info without consent
 
-See our Privacy Policy (coming soon) for details.
+The full Privacy, Cookies, Data Rights and Subprocessors documents are in the platform's documentation hub.
 
 ---
 
 ## AI & Features
 
-### What is D0nna?
-
-**D0nna** is your AI assistant for **organization and productivity**:
-- Smart calendar management
-- Task prioritization
-- Meeting coordination
-- Reminder automation
-
-Think of D0nna as your personal chief of staff.
-
----
-
 ### What is Jarv1s?
 
-**Jarv1s** is your AI assistant for **business intelligence and analytics**:
-- Real-time dashboards
-- Trend analysis
-- Predictive insights
-- Automated reporting
-
-Jarv1s helps you make data-driven decisions.
+**Jarv1s** is the in-app assistant. Ask how a feature works, ask about your own numbers, or ask it to take you somewhere. Say "take me to my analytics" and it navigates there. It runs on an **in-house model**, so the account data used to answer a question does not leave our infrastructure, and it is scoped to whichever workspace you are in.
 
 ---
 
-### How does the Global Opportunity Radar work?
+### What is D0nna?
 
-The **Opportunity Radar** uses AI to:
-1. **Monitor** global markets, news, regulations
-2. **Analyze** trends, gaps, and opportunities
-3. **Match** opportunities to your profile and interests
-4. **Alert** you with prioritized notifications
-
-Example: Manufacturer gets alert about rising demand for their product in a new region.
+**D0nna** is the organization-side assistant: smart calendar management, task prioritization, meeting coordination across time zones, and reminder automation.
 
 ---
 
-## $WIN token & Blockchain
+### What is Curiosity?
 
-### What blockchain does WIN use?
-
-**Solana**
-
-**Why Solana?**
-- **Fast:** 65,000+ transactions per second
-- **Cheap:** <$0.01 per transaction
-- **Eco-friendly:** Proof of Stake (low energy)
-- **Growing ecosystem:** Extensive DeFi and Web3 infrastructure
+**Curiosity** is your analytics surface: overview, business (sales, orders, revenue), engagement, social, content, boost spend and a tools section that generates QR codes and brand assets. Pick 7, 30 or 90 days and export what you need.
 
 ---
 
-### What can I do with $WIN tokens?
+### How does ESG scoring work?
 
-- **Transact:** Pay for services, products, events on WIN (low fees)
-- **Invest:** Fund startups via Decentralized Incubator
-- **Govern:** Vote on platform proposals (future DAO)
-- **Earn:** Stake for rewards, participate for bonuses
-- **Trade:** Buy/sell on DEXs and CEXs
+Your company declares its practices across environmental, social and governance factors, and the score is kept on the company record. You decide whether it appears on your profile. Independent verification of the underlying data is not in place yet.
 
 ---
 
-### Is $WIN a security or utility token?
+### Can AI agents read WIN?
 
-**Utility token.** $WIN is designed for:
-- Platform transactions
-- Governance voting
-- Ecosystem participation
-
-It is NOT marketed as an investment or security. Consult legal/financial advisors for your jurisdiction.
+**Yes.** WIN implements the **Model Context Protocol (MCP)** with a small set of read tools: search companies, get a company, search products, get a product, read a public profile. Agents get a typed interface instead of scraping pages.
 
 ---
 
-### When can I buy $WIN tokens?
+### What are Stories?
 
-- **Presale:** Timeline TBA
-- **DEX Launch:** Q1 2026 on Raydium, Orca
-- **CEX Listings:** 2026+ on major exchanges
+24-hour posts at the top of the feed. Photo or video, gone after a day, with viewer insights (who watched, who reacted, what they tapped). **Private stories** reach only the connections you pick, and **Highlights** keep the good ones on your profile permanently.
 
 ---
 
-## For Startups
+### What is the difference between a connection and a follow?
 
-### How does the Decentralized Incubator work?
-
-1. **Pitch:** Submit your startup idea to WIN
-2. **Community Review:** Users discuss and vote
-3. **Funding Round:** Backers invest using $WIN tokens
-4. **Matching Funds:** WIN platform adds capital (based on criteria)
-5. **Mentorship:** Access WIN network for guidance
-6. **Milestones:** Funds released as you hit targets
+**Connections are mutual.** **Follows are one-way.** They are tracked separately, per identity, so your personal network and each workspace's network do not mix.
 
 ---
 
-### What's the advantage over traditional VCs?
+## Organization
 
-- **No gatekeepers:** Direct access to capital
-- **Community backing:** Built-in user base
-- **Flexible terms:** Equity, revenue share, or token-based
-- **Faster:** Weeks vs. months for funding
-- **Transparent:** All on blockchain
+### What is in the Organization suite?
+
+Team and org chart, tasks, a shared calendar, CRM (leads, tickets, newsletters, plus Salesforce and Slack import), ERP (finance, HR, projects, assets), legal and compliance, and insights.
+
+Access is **per capability**, not just per role: opening finance, curating the company wall or accepting connection requests are each their own permission.
 
 ---
 
-### What if my startup fails?
+### I was invited to a company. Where do I accept?
 
-- **No debt:** $WIN token investments are non-recourse
-- **Learning opportunity:** Community provides feedback
-- **Second chances:** You can pitch new ideas
-
-Investors understand startup risk.
+In the Organization section while in personal mode. You get three tabs: **Pending** (waiting on you), **History** (past invitations) and **Sent** (invitations you sent from your own company).
 
 ---
 
@@ -204,8 +195,8 @@ Investors understand startup risk.
 - Website: https://www.worldindustriesnetwork.com/
 - Twitter: https://x.com/WINofficials
 - Instagram: https://www.instagram.com/worldindustriesnetwork
-- Discord: https://discord.gg/scYjRwvnn9
+- Discord: https://discord.gg/Ep5EuVjYrF
 
 ---
 
-**Last Updated:** December 2025
+**Last Updated:** August 2026
